@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://librechat.ai">
+  <a href="https://github.com/alarmedali996/QAOO-AI-">
     <img src="client/public/assets/logo.svg" height="256">
   </a>
   <h1 align="center">
