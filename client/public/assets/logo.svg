@@ -1,23 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300" role="img" aria-labelledby="title">
-  <title id="title">QAOO AI</title>
-  <defs>
-    <linearGradient id="qaoo" x1="70" y1="20" x2="520" y2="280" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#00E5FF"/><stop offset=".48" stop-color="#176BFF"/><stop offset="1" stop-color="#D52BFF"/>
-    </linearGradient>
-    <linearGradient id="letters" x1="100" y1="210" x2="540" y2="270" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F8FAFC"/><stop offset=".58" stop-color="#B8D8FF"/><stop offset="1" stop-color="#8B5CF6"/>
-    </linearGradient>
-    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-  </defs>
-  <g fill="none" stroke="url(#qaoo)" stroke-linecap="round" filter="url(#glow)">
-    <circle cx="320" cy="105" r="76" stroke-width="24"/>
-    <path d="M115 150C190 55 405 30 525 83C580 108 558 145 485 169" stroke-width="13"/>
-    <path d="M95 157C165 218 385 218 530 125" stroke-width="12"/>
-    <path d="M277 105h88l98 96h-91z" fill="url(#qaoo)" stroke="none"/>
-  </g>
-  <g font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="78" letter-spacing="2">
-    <text x="62" y="276" fill="url(#letters)">QAOO</text>
-    <text x="390" y="276" fill="url(#qaoo)">AI</text>
-  </g>
-  <path d="M62 288H576" stroke="url(#qaoo)" stroke-width="4" stroke-linecap="round" filter="url(#glow)"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="403" viewBox="0 0 640 403" role="img" aria-labelledby="title">
+<title id="title">QAOO AI</title><rect width="640" height="403" fill="#fff"/>
+<defs><linearGradient id="g" x1="60" y1="10" x2="560" y2="390" gradientUnits="userSpaceOnUse"><stop stop-color="#00e5ff"/><stop offset=".48" stop-color="#176bff"/><stop offset="1" stop-color="#d52bff"/></linearGradient><linearGradient id="silver" x1="80" y1="280" x2="560" y2="370" gradientUnits="userSpaceOnUse"><stop stop-color="#667085"/><stop offset=".5" stop-color="#111827"/><stop offset="1" stop-color="#526078"/></linearGradient><filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<g fill="none" stroke="url(#g)" stroke-linecap="round" filter="url(#glow)"><circle cx="320" cy="145" r="108" stroke-width="29"/><path d="M73 240C160 50 426 20 551 125C598 165 553 218 483 240" stroke-width="20"/><path d="M78 247C176 338 427 315 554 150" stroke-width="17"/></g>
+<path d="M278 132h83l119 119h-91z" fill="url(#g)"/>
+<text x="50" y="363" font-family="Arial,Helvetica,sans-serif" font-size="82" font-weight="800" letter-spacing="1" fill="url(#silver)">QAOO</text><text x="424" y="363" font-family="Arial,Helvetica,sans-serif" font-size="82" font-weight="800" fill="url(#g)">AI</text>
+<path d="M50 381H590" stroke="url(#g)" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
 </svg>
