@@ -3,12 +3,12 @@
     <img src="client/public/assets/logo.svg" height="256">
   </a>
   <h1 align="center">
-    <a href="https://librechat.ai">LibreChat</a>
+    <a href="https://github.com/alarmedali996/QAOO-AI-">QAOO AI</a>
   </h1>
 </p>
 
 <p align="center">
-  <strong>QAOO AI</strong> ·
+  <strong>QAOO AI — an AI assistant platform built on the open-source LibreChat project</strong> ·
   <a href="README.zh.md">中文</a>
 </p>
 
