@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <strong>English</strong> ·
+  <strong>QAOO AI</strong> ·
   <a href="README.zh.md">中文</a>
 </p>
 
