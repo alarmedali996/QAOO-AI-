@@ -88,13 +88,15 @@ function AuthLayout({
   };
 
   return (
-    <div className="bg-surface-primary relative flex min-h-screen flex-col">
+    <div className="relative flex min-h-screen flex-col overflow-hidden bg-gradient-to-br from-slate-50 via-white to-indigo-50 dark:from-slate-950 dark:via-slate-900 dark:to-indigo-950">
+      <div aria-hidden="true" className="pointer-events-none absolute -left-24 top-24 h-72 w-72 rounded-full bg-cyan-300/20 blur-3xl dark:bg-cyan-500/10" />
+      <div aria-hidden="true" className="pointer-events-none absolute -right-24 bottom-16 h-80 w-80 rounded-full bg-violet-300/20 blur-3xl dark:bg-violet-500/10" />
       <Banner />
       <BlinkAnimation active={isFetching}>
-        <div className="mt-6 h-10 w-full bg-cover">
+        <div className="relative z-10 mx-auto mt-8 flex h-16 w-full max-w-[220px] items-center justify-center px-4">
           <img
             src="assets/logo.svg"
-            className="h-full w-full object-contain"
+            className="h-full w-full object-contain drop-shadow-sm"
             alt={localize('com_ui_logo', { 0: startupConfig?.appTitle ?? 'LibreChat' })}
           />
         </div>
@@ -104,11 +106,11 @@ function AuthLayout({
         <ThemeSelector />
       </div>
 
-      <main className="flex grow items-center justify-center">
+      <main className="relative z-10 flex grow items-center justify-center px-4 py-8">
         <div
           className={cn(
-            'bg-surface-primary overflow-hidden px-6 py-4 sm:rounded-lg',
-            isTwoFactorSetup ? 'w-11/12 max-w-lg' : 'w-authPageWidth sm:max-w-md',
+            'bg-surface-primary/95 w-full overflow-hidden rounded-3xl border border-border-light px-6 py-7 shadow-2xl shadow-indigo-500/10 backdrop-blur-xl sm:px-8 sm:py-8',
+            isTwoFactorSetup ? 'max-w-lg' : 'max-w-md',
           )}
         >
           {!hasStartupConfigError && !isFetching && header && (
