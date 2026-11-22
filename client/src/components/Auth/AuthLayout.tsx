@@ -123,6 +123,18 @@ function AuthLayout({
             <SocialLoginRender startupConfig={startupConfig} showPasskey={isLogin} />
           )}
           {statesConsentBelowProviders && <LegalConsent startupConfig={startupConfig} />}
+          <div className="mt-7 flex flex-col items-center justify-center gap-2 border-t border-border-light pt-5">
+            <div className="rounded-full bg-gradient-to-br from-cyan-400/10 via-blue-500/10 to-fuchsia-500/10 p-2 shadow-lg shadow-blue-500/10">
+              <img
+                src="/assets/logo.svg"
+                alt="QAOO AI"
+                className="h-12 w-16 animate-[spin_18s_linear_infinite] object-contain motion-reduce:animate-none"
+              />
+            </div>
+            <span className="bg-gradient-to-r from-cyan-500 via-blue-600 to-fuchsia-500 bg-clip-text text-xs font-semibold tracking-[0.28em] text-transparent">
+              QAOO AI
+            </span>
+          </div>
         </div>
       </main>
       {!statesConsent && <Footer startupConfig={startupConfig} />}
