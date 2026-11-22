@@ -120,8 +120,10 @@ function SocialLoginRender({
   };
 
   const passkeyEnabled = showPasskey && startupConfig.passkeyLoginEnabled === true;
-  const socialEnabled =
-    startupConfig.socialLoginEnabled === true && (startupConfig.socialLogins?.length ?? 0) > 0;
+  const activeSocialProviders = (startupConfig.socialLogins ?? []).filter((provider) =>
+    Boolean(providerComponents[provider]),
+  );
+  const socialEnabled = startupConfig.socialLoginEnabled === true && activeSocialProviders.length > 0;
 
   if (!passkeyEnabled && !socialEnabled) {
     return null;
@@ -142,7 +144,7 @@ function SocialLoginRender({
       <div className="mt-2">
         <PasskeySignIn enabled={passkeyEnabled} />
         {socialEnabled &&
-          startupConfig.socialLogins?.map((provider) => providerComponents[provider] || null)}
+          activeSocialProviders.map((provider) => providerComponents[provider] || null)}
       </div>
     </>
   );
