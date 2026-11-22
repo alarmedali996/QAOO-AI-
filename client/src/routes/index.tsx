@@ -69,6 +69,9 @@ const loadSearch = () =>
 const loadMarketplace = () =>
   importWithRecovery(() => import('./Marketplace')).then((m) => ({ Component: m.default }));
 
+const loadBusinessStudio = () =>
+  importWithRecovery(() => import('./BusinessStudio')).then((m) => ({ Component: m.default }));
+
 const baseEl = document.querySelector('base');
 const baseHref = baseEl?.getAttribute('href') || '/';
 
@@ -169,6 +172,10 @@ export const router = createBrowserRouter(
                 {
                   path: 'search',
                   lazy: loadSearch,
+                },
+                {
+                  path: 'studio',
+                  lazy: loadBusinessStudio,
                 },
                 {
                   path: 'prompts',
