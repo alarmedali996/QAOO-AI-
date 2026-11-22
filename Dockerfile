@@ -80,6 +80,7 @@ ENV BUILD_DATE=${BUILD_DATE}
 # Node API setup
 EXPOSE 3080
 ENV HOST=0.0.0.0
+ENV APP_TITLE="QAOO AI"
 CMD ["npm", "run", "backend"]
 
 # Optional: for client with nginx routing
